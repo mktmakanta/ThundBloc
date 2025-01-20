@@ -12,37 +12,37 @@ const Footer = () => {
           </div>
         </div>
         <div className="links">
-          <ul>
-            <li>
+          <div>
+            <ul>
               <h1>PRODUCTS</h1>
               <li>Node</li>
               <li>Network Map</li>
               <li>Explorer</li>
               <li>Wallet</li>
               <li>Chat</li>
-            </li>
-            <li>
+            </ul>
+            <ul>
               <h1>DEVELOPERS</h1>
               <li>Docs</li>
               <li>Use Cases</li>
               <li>Ecosystem</li>
               <li>Install Node</li>
-            </li>
-            <li>
+            </ul>
+            <ul>
               <h1>COMMUNITY</h1>
               <li>Blog</li>
               <li>Events</li>
               <li>FAQs</li>
-            </li>
-            <li>
+            </ul>
+            <ul>
               <h1>SOCIAL</h1>
               <li>X</li>
               <li>Discord</li>
               <li>Telegram</li>
               <li>GitHub</li>
               <li>Reddit</li>
-            </li>
-          </ul>
+            </ul>
+          </div>
         </div>
       </div>
       <div className="copyright">
