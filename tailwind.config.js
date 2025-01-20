@@ -6,7 +6,12 @@ module.exports = {
     "./components/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        sans: ["Nunito Sans", "sans-serif"],
+        mono: ["IBM Plex Mono", "monospace"],
+      },
+    },
   },
   plugins: [],
 };

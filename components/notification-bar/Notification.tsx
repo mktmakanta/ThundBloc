@@ -4,24 +4,31 @@ import { X } from "lucide-react";
 import React, { useState } from "react";
 
 const Notification = () => {
-  const [apper, setApper] = useState(true);
+  const [appear, setAppear] = useState(true);
 
   const handleSection = () => {
-    setApper(false);
+    setAppear(false);
   };
   return (
     <main
-      className={`relative p-8 flex justify-center space-x-5 items-center text-xl bg-green-200 ${
-        apper ? "block" : "hidden"
+      className={`z-20 relative px-2 py-4 flex items-center justify-center min-h-24 text-white bg-[url('/images/landing/notification.jpg')] bg-cover bg-top ${
+        appear ? "block" : "hidden"
       }`}
     >
-      <div>
-        Introducing: ThundBloc Nodes (TBN) – Powering the ThundBloc Ecosystem
+      <div className="absolute h-full w-full bg-black opacity-30"></div>
+      <div className="z-30 max-w-7xl mx-auto flex flex-col lg:text-xl font-semibold lg:flex-row lg:items-center gap-2">
+        {" "}
+        <div>
+          Introducing: ThundBloc Nodes (TBN) – Powering the ThundBloc Ecosystem
+        </div>
+        <div>
+          {" "}
+          <button className="py-2 px-4 text-sm lg:text-base text-black rounded-full bg-white font-semibold ">
+            LEARN MORE
+          </button>
+        </div>
       </div>
-      <button className="py-2 px-6 rounded-full bg-white font-semibold ">
-        LEARN MORE
-      </button>
-      <div onClick={handleSection} className="absolute top-4 right-6">
+      <div onClick={handleSection} className="z-20 absolute top-2 right-4">
         <X />
       </div>
     </main>

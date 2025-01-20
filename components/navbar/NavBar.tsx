@@ -21,11 +21,15 @@ const NavBar = () => {
   // }, [menuOpen]);
 
   return (
-    <nav className={`z-20 p-10 ${menuOpen ? "bg-green-400 fixed " : ""}`}>
+    <nav
+      className={`relative z-30  p-10 ${
+        menuOpen ? "bg-slate-950 text-white fixed " : ""
+      }`}
+    >
       <div className="flex items-center justify-between ">
         {" "}
         <div className="brand">THUNDBLOC</div>
-        <div className="flex items-center space-x-5">
+        <div className="flex items-center space-x-5 font-semibold">
           <h2 className="hidden md:flex">EXPLORE</h2>
           <button onClick={toggleMenu} className="">
             {menuOpen ? "CLOSE" : "MENU"}
@@ -33,7 +37,7 @@ const NavBar = () => {
         </div>
       </div>
       {menuOpen && (
-        <div className=" bg-green-400  h-screen w-full">
+        <div className=" h-screen w-full">
           <MenuList />
         </div>
       )}
