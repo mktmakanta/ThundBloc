@@ -22,7 +22,7 @@ const NavBar = () => {
 
   return (
     <nav
-      className={`relative z-30  p-10 ${
+      className={`relative z-30   p-10 ${
         menuOpen ? "bg-slate-950 text-white fixed " : ""
       }`}
     >
@@ -37,7 +37,7 @@ const NavBar = () => {
         </div>
       </div>
       {menuOpen && (
-        <div className=" h-screen w-full">
+        <div className=" h-screen   w-full">
           <MenuList />
         </div>
       )}

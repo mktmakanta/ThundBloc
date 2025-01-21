@@ -8,8 +8,8 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        sans: ["Nunito Sans", "sans-serif"],
-        mono: ["IBM Plex Mono", "monospace"],
+        nunito: ["Nunito Sans", "serif"],
+        ibm: ["IBM Plex Mono", "serif"],
       },
     },
   },

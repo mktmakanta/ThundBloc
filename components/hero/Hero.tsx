@@ -4,7 +4,7 @@ import Notification from "../notification-bar/Notification";
 
 const Hero = () => {
   return (
-    <main className="relative h-screen  overflow-hidden">
+    <main className="relative h-screen text-slate-950  overflow-hidden">
       <Notification />
       <NavBar />
       <video
@@ -19,13 +19,17 @@ const Hero = () => {
         Your browser does not support the video tag.
       </video>
 
-      <div className="relative text-center text-white z-10 p-4">
-        <h1>Powering the Next Generation of Decentralized Innovation</h1>
-        <h2>
+      <div className="relative text-center  z-10 p-4 mt-20 max-w-5xl mx-auto">
+        <h1 className="font-nunito text-7xl  font-bold ">
+          Powering the Next Generation of Decentralized Innovation
+        </h1>
+        <p className="font-ibm max-w-2xl mx-auto">
           ThundBloc is a cutting-edge Web3 platform designed to revolutionize
           how users interact with decentralized technologies.
-        </h2>
-        <button>Join</button>
+        </p>
+        <button className="mt-3 px-12 py-3 rounded-full text-xl bg-slate-950 text-white hover:text-black hover:bg-white/50 hover:ring-2 ring-slate-950">
+          Join
+        </button>
       </div>
     </main>
   );
