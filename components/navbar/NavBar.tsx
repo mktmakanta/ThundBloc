@@ -2,6 +2,7 @@
 
 import React, { useEffect, useState } from "react";
 import MenuList from "../menu-list/MenuList";
+import Image from "next/image";
 
 const NavBar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -22,13 +23,22 @@ const NavBar = () => {
 
   return (
     <nav
-      className={`relative z-30   p-10 ${
+      className={`relative z-30 p-12  ${
         menuOpen ? "bg-slate-950 text-white fixed " : ""
       }`}
     >
-      <div className="flex items-center justify-between ">
+      <div className=" flex items-center justify-between ">
         {" "}
-        <div className="brand">THUNDBLOC</div>
+        <div className="brand">
+          <Image
+            src={"/icons/logotext-black_1.png"}
+            width={130}
+            height={100}
+            alt="logo"
+            quality={100}
+            className=" "
+          />
+        </div>
         <div className="flex items-center space-x-5 font-semibold">
           <h2 className="hidden md:flex">EXPLORE</h2>
           <button onClick={toggleMenu} className="">
@@ -36,6 +46,7 @@ const NavBar = () => {
           </button>
         </div>
       </div>
+
       {menuOpen && (
         <div className=" h-screen   w-full">
           <MenuList />

@@ -14,13 +14,13 @@ const Hero = () => {
         muted
         playsInline
       >
-        <source src="/thundvideo.mp4" type="video/mp4" />
+        <source src="/videos/thundvideo.mp4" type="video/mp4" />
         {/* <source src="/path-to-optimized-video.webm" type="video/webm" /> */}
         Your browser does not support the video tag.
       </video>
 
-      <div className="relative text-center  z-10 p-4 mt-20 max-w-5xl mx-auto">
-        <h1 className="font-nunito text-7xl  font-bold ">
+      <div className="relative text-center  z-10 p-6 mt-10  space-y-3  max-w-5xl mx-auto">
+        <h1 className="font-nunito text-4xl md:text-6xl lg:text-7xl  font-bold ">
           Powering the Next Generation of Decentralized Innovation
         </h1>
         <p className="font-ibm max-w-2xl mx-auto">

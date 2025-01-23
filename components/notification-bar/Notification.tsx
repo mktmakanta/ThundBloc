@@ -11,7 +11,7 @@ const Notification = () => {
   };
   return (
     <main
-      className={`z-20 relative px-2 py-4 flex items-center justify-center min-h-24 text-white bg-[url('/images/landing/notification.jpg')] bg-cover bg-top ${
+      className={`z-20 relative px-2 py-6 flex items-center justify-center max-h-24 text-white bg-[url('/images/landing/notification.jpg')] bg-cover bg-top ${
         appear ? "block" : "hidden"
       }`}
     >

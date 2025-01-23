@@ -15,11 +15,11 @@ const BackedBy = () => {
   ];
 
   return (
-    <section className="bg-black py-14">
-      <h2 className="text-center text-gray-400 text-4xl mb-6">
+    <section className="bg-black py-12">
+      <h2 className="text-center text-gray-400 text-2xl md:text-4xl mb-6">
         Backed by the best
       </h2>
-      <div className="max-w-6xl mx-auto grid grid-cols-2 md:grid-cols-4 lg:grid-cols-5 gap-6">
+      <div className="max-w-6xl mx-auto grid grid-cols-2 md:grid-cols-4 lg:grid-cols-5 gap-6  p-6">
         {sponsors.map((sponsor, index) => (
           <div key={index} className="flex justify-center items-center">
             <img
