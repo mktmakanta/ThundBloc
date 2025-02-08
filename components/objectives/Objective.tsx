@@ -9,28 +9,28 @@ const Objective = () => {
       heading: "Empower Decentralized Innovation",
       description:
         "Facilitate seamless integration with blockchain technology, enabling users to harness the full potential of decentralized finance, NFTs, and smart contract interactions.",
-      image: "/images/objectives/objective1.jpg",
+      image: "/images/landing/objectives/objective1.jpg",
     },
     {
       num: "02",
       heading: "Enhance User Accessibility",
       description:
         "Provide intuitive, user-friendly interfaces and tools that bridge the gap between traditional users and Web3 technologies, making blockchain accessible to everyone.",
-      image: "/images/objectives/objective2.jpg",
+      image: "/images/landing/objectives/objective2.jpg",
     },
     {
       num: "03",
       heading: "Promote Financial Sovereignty",
       description:
         "Offer solutions that prioritize user control over assets and data, fostering transparency, privacy, and autonomy in the decentralized ecosystem.",
-      image: "/images/objectives/objective3.jpg",
+      image: "/images/landing/objectives/objective3.jpg",
     },
     {
       num: "04",
       heading: "Empower Decentralized Innovation",
       description:
         "Facilitate seamless integration with blockchain technology, enabling users to harness the full potential of decentralized finance, NFTs, and smart contract interactions.",
-      image: "/images/objectives/objective4.jpg",
+      image: "/images/landing/objectives/objective4.jpg",
     },
   ];
 
@@ -50,7 +50,7 @@ const Objective = () => {
       <div
         ref={containerRef}
         onScroll={handleScroll}
-        className="h-[500px] flex  overflow-x-scroll lg:overflow-auto snap-x snap-mandatory scroll-smooth scrollbar-hide text-white"
+        className="h-[600px] flex  overflow-x-scroll lg:overflow-auto snap-x snap-mandatory scroll-smooth scrollbar-hide text-white"
       >
         {objectives.map((objective, index) => (
           <div
@@ -58,9 +58,9 @@ const Objective = () => {
             className="group flex-shrink-0 w-full sm:w-[100%] lg:w-[25%] relative p-10 h-full snap-center"
           >
             {/* Number */}
-            <h1 className="z-20 absolute right-7 top-5 font-bold">
-              {objective.num}
-            </h1>
+            <div className="z-20 absolute right-7 top-5 font-bold">
+              {objective.num} <span className="lg:hidden">/04</span>
+            </div>
 
             {/* Background Image */}
             <img
