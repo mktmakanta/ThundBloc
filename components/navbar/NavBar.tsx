@@ -22,11 +22,7 @@ const NavBar = () => {
   // }, [menuOpen]);
 
   return (
-    <nav
-      className={`relative z-30 p-12  ${
-        menuOpen ? "bg-slate-950 text-white fixed " : ""
-      }`}
-    >
+    <nav className={`relative z-10 p-12 space-y-5 `}>
       <div className=" flex items-center justify-between ">
         {" "}
         <div className="brand">
@@ -42,16 +38,10 @@ const NavBar = () => {
         <div className="flex items-center space-x-5 font-semibold">
           <h2 className="hidden md:flex">EXPLORE</h2>
           <button onClick={toggleMenu} className="">
-            {menuOpen ? "CLOSE" : "MENU"}
+            MENU
           </button>
         </div>
       </div>
-
-      {menuOpen && (
-        <div className=" h-screen   w-full">
-          <MenuList />
-        </div>
-      )}
     </nav>
   );
 };

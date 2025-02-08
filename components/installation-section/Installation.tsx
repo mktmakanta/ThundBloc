@@ -6,7 +6,7 @@ const Installation = () => {
       <div className="absolute h-full w-full bg-black opacity-50 "></div>
       <div className="absolute z-10 text-center space-y-7 flex flex-col items-center p-5">
         <div className="logo size-32 bg-white rounded-2xl"> </div>
-        <h1 className="text-3xl lg:text-6xl ">
+        <h1 className="text-3xl lg:text-7xl font-semibold">
           Contribute your <br />
           knowledge
         </h1>
