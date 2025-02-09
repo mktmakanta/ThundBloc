@@ -1,25 +1,12 @@
 "use client";
 
-import React, { useEffect, useState } from "react";
-import MenuList from "../menu-list/MenuList";
 import Image from "next/image";
+import { useDispatch, useSelector } from "react-redux";
+import { RootState } from "@/providers/store";
+import { openMenu } from "@/providers/menuSlice";
 
 const NavBar = () => {
-  const [menuOpen, setMenuOpen] = useState(false);
-
-  const toggleMenu = () => setMenuOpen(!menuOpen);
-
-  // useEffect(() => {
-  //   if (menuOpen) {
-  //     document.body.style.overflow = "hidden";
-  //   } else {
-  //     document.body.style.overflow = "auto";
-  //   }
-
-  //   return () => {
-  //     document.body.style.overflow = "auto";
-  //   };
-  // }, [menuOpen]);
+  const dispatch = useDispatch();
 
   return (
     <nav className={`relative z-10 p-12 space-y-5 `}>
@@ -37,7 +24,7 @@ const NavBar = () => {
         </div>
         <div className="flex items-center space-x-5 font-semibold">
           <h2 className="hidden md:flex">EXPLORE</h2>
-          <button onClick={toggleMenu} className="">
+          <button onClick={() => dispatch(openMenu())} className="">
             MENU
           </button>
         </div>
