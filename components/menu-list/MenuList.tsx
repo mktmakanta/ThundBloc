@@ -37,19 +37,20 @@ const MenuList = () => {
   return (
     <>
       {isOpen && (
-        <main className="bg-neutral-950 fixed h-screen w-full z-50 overflow-auto">
+        <main className="bg-yellow-500 relative h-screen w-full z-50 overflow-y-scroll ">
           <div
-            className={` md:h-screen w-full h-screen grid md:grid-rows-[100px,1fr,80px] grid-rows-[60px,1fr,1fr] `}
+            className={` md:h-screen w-full h-screen grid  grid-rows-[60px,1fr,1fr]  md:grid-rows-[100px,1fr,80px] `}
           >
+            {/* top one  */}
             <div className="bg-neutral-950 border-b border-neutral-600 text-white flex justify-end items-center space-x-5 font-semibold font-ibm px-10">
               <h2 className="hidden lg:flex">EXPLORE</h2>
               <button onClick={() => dispatch(closeMenu())} className="">
                 CLOSE
               </button>
             </div>
-            {/* mobile  */}
+            {/* mobile middle */}
             <div className="md:hidden h-full w-full "></div>
-            {/* tablet and desktop */}
+            {/* tablet and desktop middle */}
             <div className="hidden md:grid grid-cols-2">
               <div className="grid grid-rows-3 ">
                 {menuItems.map((item) => (
@@ -83,7 +84,9 @@ const MenuList = () => {
                   ))}
               </div>
             </div>
-            <div className="bg-neutral-950 text-white border-t space-x-96 font-ibm text-sm font-semibold flex px-14 items-center border-neutral-600">
+
+            {/* last one  */}
+            <div className="bg-neutral-950 text-white border-t md:space-x-96 font-ibm text-sm font-semibold flex flex-col md:flex-row px-14 items-center border-neutral-600 overflow-hidden ">
               <div className=""> ©2025 ThundBloc</div>
               <ul className="space-x-8 flex cursor-pointer ">
                 <li>X</li>
